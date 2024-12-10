@@ -1,0 +1,42 @@
+/* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
+
+/* Webkit Utilities */
+/* Text Selection Colour  */
+::-moz-selection {
+  @apply bg-primary text-white dark:bg-white dark:text-primary 
+}
+::-webkit-selection {
+  @apply bg-primary text-white dark:bg-white dark:text-primary
+}
+::selection {
+  @apply bg-primary text-white dark:bg-white dark:text-primary
+}
+
+/* Scrollbar Edit  */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-600;
+  opacity: 0.5;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary
+}
+
+/* input:-webkit-autofill, */
+/* input:-webkit-autofill:hover, */
+/* input:-webkit-autofill:focus, */
+/* input:-webkit-autofill:active { */
+  /* transition: background-color 5000s; */
+  /* -webkit-text-fill-color: #fff !important; */
+/* } */
+

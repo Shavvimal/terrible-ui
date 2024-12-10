@@ -1,0 +1,95 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "strict": false,
+    "strictNullChecks": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "exactOptionalPropertyTypes": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": false,
+    "noPropertyAccessFromIndexSignature": false,
+    "noUncheckedIndexedAccess": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "isolatedModules": true,
+    "allowJs": true,
+    "checkJs": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "preserve",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+    "allowImportingTsExtensions": false,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "incremental": true,
+    "declaration": false,
+    "declarationMap": false,
+    "sourceMap": true,
+    "pretty": true,
+    "preserveWatchOutput": true,
+    "tsBuildInfoFile": "tsconfig.tsbuildinfo",
+    "baseUrl": "src",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/assets/*": [
+        "./shared/assets/*"
+      ],
+      "@/components/*": [
+        "./shared/components/*"
+      ],
+      "@/config/*": [
+        "./shared/config/*"
+      ],
+      "@/lib/*": [
+        "./shared/lib/*"
+      ],
+      "@/styles/*": [
+        "./shared/styles/*"
+      ],
+      "@/types/*": [
+        "./shared/types/*"
+      ],
+      "@/data/*": [
+        "./shared/data/*"
+      ],
+      "@/hooks/*": [
+        "./shared/hooks/*"
+      ],
+      "@/widgets/*": [
+        "./shared/components/widgets/*"
+      ]
+    },
+    "target": "ES2017"
+  },
+  "include": [
+    "next-env.d.ts",
+    "slate-extended.d.ts",
+    ".next/types/**/*.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.cts",
+    "src/**/*.ctsx",
+    "src/**/*.mts",
+    "src/**/*.mtsx",
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/**/*.cjs",
+    "src/**/*.cjsx",
+    "src/**/*.mjs",
+    "src/**/*.mjsx"
+  ],
+  "exclude": ["node_modules"]
+}

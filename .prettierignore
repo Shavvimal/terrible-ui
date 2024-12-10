@@ -1,0 +1,15 @@
+src/shared/types/store.ts
+src/shared/data/actions.ts
+src/shared/data/provider.tsx
+cache
+.cache
+package.json
+package-lock.json
+public
+CHANGELOG.md
+.yarn
+dist
+node_modules
+.next
+build
+.contentlayer

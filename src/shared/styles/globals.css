@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Additional styles */
+@import "./additional-styles/typography.css";
+@import "./additional-styles/webkit.css";
+
+/* ShadCN */
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  :root {
+    --background: 35 0% 100%;
+    --foreground: 35 0% 10%;
+    --card:  35 2% 97%;
+    --card-foreground: 35 0% 15%;
+    --popover: 35 0% 100%;
+    --popover-foreground: 35 95% 10%;
+    --primary: 35 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 35 10% 90%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: -3 10% 95%;
+    --muted-foreground: 35 0% 40%;
+    --accent: -3 10% 90%;
+    --accent-foreground: 35 0% 15%;
+    --destructive: 0 50% 50%;
+    --destructive-foreground: 35 0% 100%;
+    --border: 35 20% 82%;
+    --input: 35 20% 50%;
+    --ring: 35 100% 50%;
+    --radius: 0.5rem;
+    /* Sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 35 100% 50%
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 35 100% 50%
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 35 100% 50%;
+    /* Plate */
+    --brand:  35 100% 50%;
+    --highlight: 47.9 95.8% 53.1%;
+  }
+  .dark {
+    --background: 35 10% 5%;
+    --foreground: 35 5% 90%;
+    --card: 35 8% 0%;
+    --card-foreground: 35 5% 90%;
+    --popover: 35 10% 5%;
+    --popover-foreground: 35 5% 90%;
+    --primary: 35 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 35 10% 10%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: -3 10% 15%;
+    --muted-foreground: 35 5% 60%;
+    --accent: -3 10% 15%;
+    --accent-foreground: 35 5% 90%;
+    --destructive: 0 50% 30%;
+    --destructive-foreground: 35 5% 90%;
+    --border: 35 20% 18%;
+    --input: 35 20% 18%;
+    --ring: 35 100% 50%;
+    --radius: 0.5rem;
+    /* Sidebar */
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 35 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 35 100% 50%;
+    /* Plate */
+    --brand:  35 100% 50%;
+    --highlight: 48 96% 53%;
+  }
+}
